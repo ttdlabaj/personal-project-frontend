@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap');
+
+body {
+    background: url(./images/bg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none !important;
+    transition: 0.2s;
+}
+
+/* Header */
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding: 3em 0;
+}
+.navbar-light .navbar-brand {
+    color: #fff !important;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: inherit;
+}
+
+.orange {
+    color: #d57800;
+}
+
+.pp .navbar-collapse {
+    flex-grow: 0;
+}
+#basic-navbar-nav a {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-right: 2em;
+}
+#basic-navbar-nav a:last-child {
+    padding-right: 0;
+}
+
+#basic-navbar-nav a:hover {
+    color: #d57800;
+}
+
+.navbar .container {
+    border-bottom: 1px solid #435171;
+    padding-bottom: 2em;
+}
+
+/* date component*/
+.date {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 100;
+    padding-bottom: 3em;
+}
+
+.date span {
+    font-weight: 500;
+}
+
+.quote-block {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: #fff;
+}
+
+p.quote {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1.5em 2em 0.4em 1em;
+}
+
+p.author {
+    color: #d57800;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+    font-size: 1.3em;
+}
+
+.btn.btn-primary {
+    padding: 0.6em 1.5em;
+    border-radius: 0.5em;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* goals page */
+.task-item.row {
+    background: #fff;
+    padding: 1em;
+}
+
+h1.header {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    padding-bottom: 1em;
+}
+
+.add-goal.row {
+    padding: 0 16em;
+}
+
+.add-goal input {
+    height: 60px;
+    width: 81%;
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.add-goal .mb-3 {
+    display: flex;
+}
+
+.add-goal .btn.btn-primary {
+    border-radius: 0 0.5em 0.5em 0 !important;
+    margin-top: 0;
+}
+
+.task-item.row {
+    background: #fff;
+    padding: 1em;
+    margin: 1em 16em;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+p.task-title {
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+.task-item input#formBasicCheckbox {
+    width: 2em;
+    height: 2em;
+    background: #d6dce9;
+    border-radius: 0;
+    border: none;
+}
+
+.edit-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+span.d-icons {
+    color: #b40000;
+    font-size: 1.3em;
+    padding: 0 0 0 0.7em;
+}
+
+span.e-icons {
+    color: #0132a4;
+    font-size: 1.3em;
+    padding: 0 0.2em;
+}
+
+.accordion-body .task-item.row {
+    margin: 1em;
+    border: 1px solid #efefef;
+}
+.droppable-col {
+    background: #dbe7e8;
+    min-height: 100px;
+    border-radius: 0.5em;
+    padding: 20px;
+}
+
+.daily-task-column .task-item.row {
+    margin: 0;
+}
+
+h3.droppable-header {
+    color: #fff;
+}
+
+.daily-item h3.droppable-header {
+    background: #fff;
+    margin-bottom: 1px;
+    padding: 1em;
+    color: #000;
+}
+
+.daily-task-column.daily-item {
+    width: 70%;
+    margin-left: 12em;
+    margin-bottom: 4em;
+}
+
+.daily-item h3::after {
+    content: "\a Add a maximum of 1 goal and 3 tasks to this section.";
+    white-space: pre;
+    font-weight: 300;
+    font-size: .8em;
+    color: #434343;
+    margin-top: 5px;
+}
+
+.droppable-col .task-item {
+    margin-bottom: 10px !important;
+}
+
+.task-item.goals.row {
+    background: #fffac3;
+    font-weight: 700;
+}
+
+.daily-item .droppable-col {
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.stat-row.row {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.stat-row .col div {
+    background: #fff;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
+p.stat-header {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 1em;
+}
+
+.add-task input,
+.add-task select {
+    height: 60px;
+    width: 43%;
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.add-task select {
+    border-radius: 0;
+}
+
+.add-task.row {
+    padding: 0 3em;
+}
+
+.add-task .mb-3 {
+    display: flex;
+}
+
+.add-task .btn.btn-primary {
+    border-radius: 0 0.5em 0.5em 0 !important;
+    margin-top: 0;
+    height: 60px;
+}
+
+iframe {
+    padding-right: 7em;
+}
+
+div#player {
+    border: 4px solid rgba(255, 255, 255, .1);
+}
+
+.daily-item .item:first-child .task-item {
+    background: #fffac3;
+    font-weight: 700
+}
+
+.goalspage .task-item.goals.row {
+    background: #fff;
+    font-weight: 400;
+}
+.navbar-nav {
+    align-items: center;
+}
+
+/* .task-item.goals .edit-icons {
+    display: none;
+}
+
+.task-item .edit-icons {
+    display: none;
+} */
